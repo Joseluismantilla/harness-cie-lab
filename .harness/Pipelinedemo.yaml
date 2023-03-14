@@ -27,7 +27,8 @@ pipeline:
                     connectorRef: Dockerhub
                     repo: joseluismantilla/harness
                     tags:
-                      - v1.0
+                      - "1.0"
+                      - latest
                     dockerfile: payment-service/Dockerfile
                   failureStrategies: []
               - step:
