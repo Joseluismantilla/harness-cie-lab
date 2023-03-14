@@ -28,6 +28,7 @@ pipeline:
                     repo: joseluismantilla/harness
                     tags:
                       - v1.0
+                    dockerfile: payment-service/Dockerfile
                   failureStrategies: []
               - step:
                   type: Run
