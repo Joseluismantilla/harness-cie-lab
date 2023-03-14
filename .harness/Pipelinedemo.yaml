@@ -13,7 +13,6 @@ pipeline:
     - stage:
         name: clone
         identifier: clone
-        description: ""
         type: CI
         spec:
           cloneCodebase: true
