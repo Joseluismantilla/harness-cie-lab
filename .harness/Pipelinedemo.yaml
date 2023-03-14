@@ -28,7 +28,7 @@ pipeline:
                     tags:
                       - "1.0"
                       - latest
-                    dockerfile: /harness/payment-service/Dockerfile
+                    dockerfile: ./payment-service/Dockerfile
                   failureStrategies: []
               - step:
                   type: Run
