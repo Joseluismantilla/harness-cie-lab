@@ -19,6 +19,22 @@ pipeline:
           execution:
             steps:
               - step:
+                  type: RunTests
+                  name: Tests
+                  identifier: Tests
+                  spec:
+                    connectorRef: Dockerhub
+                    image: nikpap/mvn-openjdk-8:harness
+                    language: Java
+                    buildTool: Maven
+                    args: test
+                    runOnlySelectedTests: true
+                    reports:
+                      type: JUnit
+                      spec:
+                        paths:
+                          - "**/*.xml"
+              - step:
                   type: Run
                   name: Run_1
                   identifier: Run_1
