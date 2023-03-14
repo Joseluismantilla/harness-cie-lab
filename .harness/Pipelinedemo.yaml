@@ -44,7 +44,7 @@ pipeline:
                       - "1.0"
                       - latest
                     dockerfile: /harness/payment-service/Dockerfile
-                    optimize: true
+                    optimize: false
                     resources:
                       limits:
                         memory: 1Gi
