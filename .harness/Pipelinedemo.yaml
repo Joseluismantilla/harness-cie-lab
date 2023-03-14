@@ -1,5 +1,5 @@
 pipeline:
-  name: Pipeline-demo
+  name: github-harness
   identifier: Pipelinedemo
   projectIdentifier: jmantillabootcamp
   orgIdentifier: default
